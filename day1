@@ -1,13 +1,5 @@
-- 내용
-    1. [http://tcpschool.com/c/c_array_oneDimensional](http://tcpschool.com/c/c_array_oneDimensional)
-    2. [https://manniz.tistory.com/entry/C언어C언어-배열-초기화-C언어-배열-초기화-소스코드-C언어-배열-초기화-방법-및-분석](https://manniz.tistory.com/entry/C%EC%96%B8%EC%96%B4C%EC%96%B8%EC%96%B4-%EB%B0%B0%EC%97%B4-%EC%B4%88%EA%B8%B0%ED%99%94-C%EC%96%B8%EC%96%B4-%EB%B0%B0%EC%97%B4-%EC%B4%88%EA%B8%B0%ED%99%94-%EC%86%8C%EC%8A%A4%EC%BD%94%EB%93%9C-C%EC%96%B8%EC%96%B4-%EB%B0%B0%EC%97%B4-%EC%B4%88%EA%B8%B0%ED%99%94-%EB%B0%A9%EB%B2%95-%EB%B0%8F-%EB%B6%84%EC%84%9D)
-    3. [https://dsnight.tistory.com/50](https://dsnight.tistory.com/50)
-    4. [책] 독학사 컴퓨터과학 자료구조
-        1. [https://m.blog.naver.com/raylee00/221944085465](https://m.blog.naver.com/raylee00/221944085465)(연결리스트(Linked List)와 배열(Array), 그리고 시간복잡도의 차이에 대해)
-    5. [https://twpower.github.io/159-how-to-measure-code-running-time](https://twpower.github.io/159-how-to-measure-code-running-time)([C, C++] clock()함수를 이용해 코드 실행시간 측정하기)
-    6. [http://www.ktword.co.kr/test/view/view.php?m_temp1=6212&id=1420](http://www.ktword.co.kr/test/view/view.php?m_temp1=6212&id=1420)(시간복잡도)
-
-```c
+<pre>
+<code>
 typedef struct s_list
 {
 	int data;
@@ -17,7 +9,8 @@ typedef struct s_list
 //선언
 int arr[10];
 t_list *lst;
-```
+</pre>
+</code>
 
 ## 배열
 
