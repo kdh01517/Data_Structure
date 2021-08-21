@@ -1,4 +1,5 @@
 '''c
+
 	typedef struct s_list
 	{
 		int data;
