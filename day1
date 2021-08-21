@@ -1,5 +1,4 @@
-<pre>
-<code>
+'''c
 typedef struct s_list
 {
 	int data;
@@ -9,8 +8,7 @@ typedef struct s_list
 //선언
 int arr[10];
 t_list *lst;
-</pre>
-</code>
+'''
 
 ## 배열
 
