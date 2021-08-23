@@ -84,21 +84,21 @@ ListNode* getLLElement(LinkedList* pList, int position)
     return (curNode);
 }
 
-// void clearLinkedList(LinkedList* pList)
-// {
-//     ListNode *curNode = &pList->headerNode;
-//     ListNode *tmpNode;
+void clearLinkedList(LinkedList* pList)
+{
+    ListNode *curNode = pList->headerNode.pLink;
+    ListNode *tmpNode = pList->headerNode.pLink;
 
-//     for (int i = 0; i < pList->currentElementCount -1; i++)
-//     {
-//         tmpNode = curNode->pLink;
-//         free(curNode);
-//         curNode = NULL;
-//         pList->currentElementCount--;
-//     }
-//     free(pList);
-// }
-
+    for (int i = 0; i < pList->currentElementCount; i++)
+    {
+        tmpNode = curNode->pLink;
+        free(curNode);
+        curNode = NULL;
+        curNode = tmpNode;
+    }
+    pList->currentElementCount = 0;
+    free(pList);
+}
 int getLinkedListLength(LinkedList* pList)
 {
     return (pList->currentElementCount);
@@ -125,10 +125,11 @@ int main(){
     addLLElement(list, 2, createNode(3));
     addLLElement(list, 3, createNode(4));
 
-    // for (int i = 0; i < 10; i++) {
-    //     addLLElement(list, i, createNode(i));
-    // }
+    for (int i = 0; i < 10; i++) {
+        addLLElement(list, i, createNode(i));
+    }
     for (int i = 1; i < list->currentElementCount + 1; i++){
         printf("%d " ,getLLElement(list, i)->data);
     }
+    clearLinkedList(list);
 }

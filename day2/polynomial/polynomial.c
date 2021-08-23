@@ -22,8 +22,8 @@ int calculate_polynomial(LinkedList *plist)
         tmp = 1;
         polyNode = getLLElement(plist, i);
         for (int j = 0; j < polyNode->degree; j++)
-            tmp *= polyNode->x;
-        sum += polyNode->coef * tmp;
+            tmp *= polyNode->x; //차수  계산
+        sum += polyNode->coef * tmp; // 계수  계산
     }
     return (sum);
 }
@@ -33,10 +33,11 @@ int main()
     LinkedList *list;
     list = createLinked();
     //2^3
-    int x = 2;
-    //createPolyNode(2, 3); 2x 2^3 + 2x 2^3
-    addLLElement(list, 0, createPolyNode(x ,2, 3));
-    addLLElement(list, 1, createPolyNode(x, 2, 3));
-    addLLElement(list, 2, createPolyNode(x, 2, 3));
+    addLLElement(list, 0, createPolyNode(2 ,2, 3)); //16
+    addLLElement(list, 1, createPolyNode(3, 2, 3)); //54
+    addLLElement(list, 2, createPolyNode(4, 2, 3)); //128
     printf("polynomial = %d\n", calculate_polynomial(list));
+    clearLinkedList(list);
+
+    
 }

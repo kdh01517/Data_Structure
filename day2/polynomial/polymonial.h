@@ -8,6 +8,6 @@
 
 int calculate_polynomial(LinkedList *plist);
 
-ListNode *createNode(int data)
+ListNode *createNode(int data);
 
 #endif

@@ -84,20 +84,21 @@ ListNode* getLLElement(LinkedList* pList, int position)
     return (curNode);
 }
 
-// void clearLinkedList(LinkedList* pList)
-// {
-//     ListNode *curNode = &pList->headerNode;
-//     ListNode *tmpNode;
+void clearLinkedList(LinkedList* pList)
+{
+    ListNode *curNode = pList->headerNode.pLink;
+    ListNode *tmpNode = pList->headerNode.pLink;
 
-//     for (int i = 0; i < pList->currentElementCount -1; i++)
-//     {
-//         tmpNode = curNode->pLink;
-//         free(curNode);
-//         curNode = NULL;
-//         pList->currentElementCount--;
-//     }
-//     free(pList);
-// }
+    for (int i = 0; i < pList->currentElementCount; i++)
+    {
+        tmpNode = curNode->pLink;
+        free(curNode);
+        curNode = NULL;
+        curNode = tmpNode;
+    }
+    pList->currentElementCount = 0;
+    free(pList);
+}
 
 int getLinkedListLength(LinkedList* pList)
 {
