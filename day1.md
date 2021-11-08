@@ -148,7 +148,6 @@ t_list	*new_element(int idx, char *type);
 
 ## 연결리스트
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd3335b4-7eaa-4497-8efb-d97e8a79b291/Untitled.png)
 
 ```c
 typedef struct	s_list
@@ -215,7 +214,6 @@ t_list	*sort_list_desc(t_list *lst);
 
 ## 원형연결리스트
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/34393d29-37a1-4949-ae7e-6db52d567ebc/Untitled.png)
 
 ```c
 typedef struct	s_cc_list
@@ -283,7 +281,6 @@ typedef struct	s_cc_list
 
 ## 이중연결리스트
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fb3cca28-9084-499e-ad82-2c2d337ceb50/Untitled.png)
 
 ```c
 typedef struct s_db_list
@@ -351,8 +348,6 @@ typedef struct s_db_list
 ---
 
 ## 이중원형연결리스트
-
-![스크린샷 2021-08-18 오후 9.23.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/70f75aa5-0eaa-4e44-abf8-11303e32d0a2/스크린샷_2021-08-18_오후_9.23.36.png)
 
 ```c
 typedef struct s_cc_list
